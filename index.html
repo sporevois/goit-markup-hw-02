@@ -3,40 +3,40 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="./css/normalize.css" /> -->
+    <link rel="stylesheet" href="./css/css-reset.css">
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Studio Main</title>
 </head>
 <body>
-<!-- Шапка страницы -->
-<header>
+<!-- Page header -->
+<header class="page-header">
     <nav>
-        <a href="#">
-            <span>Web</span>Studio
+        <a href="#" class="header-logo link">
+            <span class="colorized">Web</span>Studio
         </a>
-        <ul>
-            <li> <a href="">Студия</a> </li>
-            <li> <a href="./portfolio.html">Портфолио</a></li>
-            <li> <a href="">Контакты</a></li>
+        <ul class="site-nav list">
+            <li> <a href="" class="link current">Студия</a> </li>
+            <li> <a href="./portfolio.html" class="link">Портфолио</a></li>
+            <li> <a href="" class="link">Контакты</a></li>
         </ul>
     </nav>
-        <ul>
-            <li> <a href="mailto:info@devstudio.com">info@devstudio.com</a> </li>
-            <li> <a href="tel:+380961111111">+38 096 111 11 11</a> </li>
+        <ul class="contact list">
+            <li> <a href="mailto:info@devstudio.com" class="mail link">info@devstudio.com</a> </li>
+            <li> <a href="tel:+380961111111" class="tel link">+38 096 111 11 11</a> </li>
         </ul>
     
 </header>
 
 <main>
-<!-- Герой -->
+<!-- Hero -->
 <section>
     <h1>Эффективные решения для вашего бизнеса</h1>
     <!-- Если кнопка -->
     <button type="button">Заказать услугу</button>
-
-    <!-- Если ссылка -->
-    <!-- <a href="">Заказать услугу</a> -->
 </section>
 
-<!-- Наши преимущества -->
+<!-- Our advantages -->
 <section>
     <h2>Наши преимущества</h2> <!--убрать (скрыть) в CSS -->
     <ul>
@@ -59,7 +59,7 @@
     </ul>
 </section>
 
-<!-- Чем занимаемся -->
+<!-- Features -->
 <section>
     <h2>Чем мы занимаемся</h2>
     <ul>
@@ -69,7 +69,7 @@
     </ul>
 </section>
 
-<!-- Наша команда -->
+<!-- Our team -->
 <section>
     <h2>Наша команда</h2>
     <ul>
@@ -97,16 +97,16 @@
 </section>
 </main>
 
-<!-- Подвал -->
-<footer>
-    <a href="#">
-        <span>Web</span>Studio
+<!-- Footer -->
+<footer class="page-footer">
+    <a href="#" class="footer-logo link">
+        <span class="colorized">Web</span>Studio
     </a>
-    <address>
-        <p>г. Киев, пр-т Леси Украинки, 26</p>
+    <address class="footer-address">
+        <p class="location">г. Киев, пр-т Леси Украинки, 26</p>
         <ul>
-            <li> <a href="mailto:info@devstudio.com">info@devstudio.com</a> </li>
-            <li> <a href="tel:+380961111111">+38 096 111 11 11</a> </li>
+            <li> <a href="mailto:info@devstudio.com" class="mail link">info@devstudio.com</a> </li>
+            <li> <a href="tel:+380961111111" class="tel link">+38 096 111 11 11</a> </li>
         </ul>
     </address>
 </footer>

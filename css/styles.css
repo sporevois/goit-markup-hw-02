@@ -6,9 +6,9 @@
 
 текст кнопки, заголовок героя  (белый) #FFFFFF 
 
-фон секции-героя и футера (темный) #2F303A
++ фон секции-героя и футера (темный) #2F303A
 
-основной цвет текста (черный) #212121
++ основной цвет текста (черный) #212121
 
 цвет текста в параграфах, телефон и мэйл в хедере (серый) #757575
 
@@ -18,6 +18,84 @@
 
 Портфолио:
 фон кнопки фильтра #F5F4FA
-цвет мэйла и тел в футере  rgba(255, 255, 255, 0.6);
++цвет мэйла и тел в футере  rgba(255, 255, 255, 0.6);
 
 */
+:root {
+  --primary-white-color: #ffffff;
+  --logo-colorized-symbols: #2196f3;
+  --page-bg-color: #ffffff;
+  --hero-bg-color: #2f303a;
+  --section-bg-color: #f5f4fa;
+  --current-page-color: #2196f3;
+  --current-btn-color: #2196f3;
+  --btn-hover-color: #188ce8;
+  --btn-bg-color: #f5f4fa;
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --footer-adress-color: rgba(255, 255, 255, 0.6);
+  --btn-bg-color: #f5f4fa;
+}
+
+/*::::::::::::::Body Styles:::::::::::::::::::::::*/
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+/* ___Page header___ */
+
+/* Logo */
+.header-logo {
+  color: var(--title-text-color);
+}
+.header-logo .colorized {
+  color: var(--logo-colorized-symbols);
+}
+
+/* Site nav */
+.site-nav .link {
+  color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--current-page-color);
+}
+.site-nav .link.current {
+  color: var(--current-page-color);
+}
+
+/* Contact */
+.contact .mail,
+.tel {
+  color: var(--primary-text-color);
+}
+.contact .mail:hover,
+.contact .mail:focus {
+  color: var(--current-page-color);
+}
+
+/*___Page Footer____*/
+
+/* Logo */
+.page-footer {
+}
+.footer-logo {
+  color: var(--title-text-color);
+}
+.footer-logo .colorized {
+  color: var(--logo-colorized-symbols);
+}
+
+/* Address */
+.footer-address {
+  color: var(--footer-adress-color);
+}
+.location {
+  color: var(--primary-white-color);
+}
+.mail,
+.tel {
+  color: var(--footer-adress-color);
+}
