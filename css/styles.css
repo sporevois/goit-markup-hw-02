@@ -26,7 +26,7 @@
   --logo-colorized-symbols: #2196f3;
   --page-bg-color: #ffffff;
   --hero-bg-color: #2f303a;
-  --section-bg-color: #f5f4fa;
+  --dimm-bg-color: #f5f4fa;
   --current-page-color: #2196f3;
   --current-btn-color: #2196f3;
   --btn-hover-color: #188ce8;
@@ -44,7 +44,19 @@
 .list {
   list-style: none;
 }
-/* ___Page header___ */
+.hide {
+  display: none;
+}
+body {
+  background-color: var(--page-bg-color);
+  color: var(--primary-text-color);
+}
+.section-title,
+.title {
+  color: var(--title-text-color);
+}
+
+/* <<<<<< Page header >>>>> */
 
 /* Logo */
 .header-logo {
@@ -68,34 +80,71 @@
 
 /* Contact */
 .contact .mail,
-.tel {
+.contact .tel {
   color: var(--primary-text-color);
 }
 .contact .mail:hover,
-.contact .mail:focus {
+.contact .mail:focus,
+.contact .tel:hover,
+.contact .tel:focus {
   color: var(--current-page-color);
 }
 
-/*___Page Footer____*/
-
+/*<<<<<< Page Footer >>>>>>>>*/
+.page-footer {
+  background-color: var(--hero-bg-color);
+}
 /* Logo */
 .page-footer {
 }
 .footer-logo {
-  color: var(--title-text-color);
+  color: var(--primary-white-color);
 }
 .footer-logo .colorized {
   color: var(--logo-colorized-symbols);
 }
 
 /* Address */
-.footer-address {
-  color: var(--footer-adress-color);
-}
 .location {
   color: var(--primary-white-color);
 }
 .mail,
 .tel {
   color: var(--footer-adress-color);
+}
+
+/* <<<<< Page Main >>>>> */
+
+/* Hero */
+.hero {
+  color: var(--primary-white-color);
+  background-color: var(--hero-bg-color);
+}
+.btn-hero {
+  color: var(--primary-white-color);
+  background-color: var(--current-btn-color);
+}
+.btn-hero:hover,
+.btn-hero:focus {
+  color: var(--primary-white-color);
+  background-color: var(--btn-hover-color);
+}
+
+/* Our team */
+.section.dimm {
+  background-color: var(--dimm-bg-color);
+}
+
+/* <<<<< Page Portfolio >>>>> */
+
+/* Filter buttons */
+.filt-btn {
+  color: var(--title-text-color);
+  background-color: var(--btn-bg-color);
+}
+.filt-btn:hover,
+.filt-btn:focus,
+.filt-btn.current {
+  color: var(--primary-white-color);
+  background-color: var(--current-btn-color);
 }
