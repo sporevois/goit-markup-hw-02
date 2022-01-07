@@ -57,7 +57,6 @@ body {
 .section-title {
   color: var(--title-text-color);
 
-  font-family: Roboto;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -87,7 +86,6 @@ body {
 .site-nav .link {
   color: var(--title-text-color);
 
-  font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -105,7 +103,6 @@ body {
 .contact .tel {
   color: var(--primary-text-color);
 
-  font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -143,11 +140,16 @@ body {
 .tel {
   color: var(--footer-adress-color);
 
-  font-family: Roboto;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
+}
+.mail:hover,
+.tel:hover,
+.mail:focus,
+.tel:focus {
+  color: var(--primary-white-color);
 }
 .location {
   color: var(--primary-white-color);
@@ -160,7 +162,6 @@ body {
   color: var(--primary-white-color);
   background-color: var(--hero-bg-color);
 
-  font-family: Roboto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -172,7 +173,7 @@ body {
   color: var(--primary-white-color);
   background-color: var(--current-btn-color);
 
-  font-family: Roboto;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -181,6 +182,7 @@ body {
 
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
 }
 .btn-hero:hover,
 .btn-hero:focus {
@@ -188,7 +190,6 @@ body {
 }
 /* Our advantages */
 .title.advantage {
-  font-family: Roboto;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -199,14 +200,12 @@ body {
   background-color: var(--dimm-bg-color);
 }
 .title.team {
-  font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
 .position {
-  font-family: Roboto;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -217,10 +216,29 @@ body {
 .filt-btn {
   color: var(--title-text-color);
   background-color: var(--btn-bg-color);
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
 }
 .filt-btn:hover,
 .filt-btn:focus,
 .filt-btn.current {
   color: var(--primary-white-color);
   background-color: var(--current-btn-color);
+}
+/* Portfolio list */
+.title.description {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.filter-item {
+  font-size: 16px;
+  line-height: 1.88;
 }
